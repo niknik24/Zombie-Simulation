@@ -4,7 +4,6 @@ clc;
 
 total_citizens = 150;
 simulation_length = 300;
-transmission_rate = 1;
 degradation_rate = 0.4;
 death_rate = 0.01;
 transmission_radius = 75;
@@ -28,7 +27,7 @@ for i = 1:simulation_length
   frame = draw_population(citizens);
   writeVideo(video, frame);
   citizens = update_positions(citizens);
-  citizens = update_status(citizens, transmission_rate, transmission_radius,zmbPower);
+  citizens = update_status(citizens,transmission_radius,zmbPower);
   citizens = update_degradation(citizens, degradation_rate, death_rate);
 end
 close(video);
