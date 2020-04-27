@@ -2,11 +2,11 @@ function [x,y] = meet_check(p,a,zmbPower)
     check=rand;
     switch p(5)
         case 1
-            v=zmbPower(1,:)
+            v=zmbPower(1,:);
         case 2
-            v=zmbPower(2,:)
+            v=zmbPower(2,:);
         case 3
-            v=zmbPower(3,:)
+            v=zmbPower(3,:);
         case 4
             v=[ 0 0 ];
     end
