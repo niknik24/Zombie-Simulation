@@ -1,4 +1,4 @@
-function [new_population] = update_status(population,transmission_radius,zmbPower)
+function [new_population] = update_status(population,transmission_rate, transmission_radius, zmbPower)
     infected = find((population(:,5) ~= 0) & (population(:,5) ~= 4));
     [k,~] = size(infected);
     in_danger = find(population(:,5) == 0) ; 
