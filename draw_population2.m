@@ -1,4 +1,4 @@
-function [] = draw_population(population)
+function [] = draw_population2(population)
     cla;
     [n,~] = size(population);
     for i = 1:n
